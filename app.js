@@ -9,6 +9,7 @@ var path = require('path');
 var route = require('./route');
 var router = express.Router();
 
+
 // putting index.html
 app.use(express.static(__dirname+'/public'));
 
