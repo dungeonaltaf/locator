@@ -26,6 +26,14 @@ router.post('/post/location/',urlencoder,function(req,res){
     });
 });
 
+router.post('/post/login/',urlencoder,function(req,res){
+        console.log(req);
+});
+
+router.post('/post/signin/',urlencoder,function(req,res){
+        console.log(req);
+});
+
 router.get('/get/location/',urlencoder,function(req,res){
     console.log("response has been sent");
     GPS.find(function(err,gps){
