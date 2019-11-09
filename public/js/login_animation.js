@@ -1,3 +1,4 @@
+//it's just for animation of making login and signin on same page.
 $('#form').find('input, textarea').on('keyup blur focus', function (e) {
   
     var $this = $(this),

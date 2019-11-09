@@ -20,7 +20,7 @@ export class MapsComponent implements OnInit {
   constructor(private mapService : MapsService) { }
 
   ngOnInit() {
-
+//subscribing so getting get request from node applicaiton continuously
     this.mapService.getLocation().subscribe(locations =>this.locations =locations );
     
   }

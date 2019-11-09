@@ -19,7 +19,7 @@ export class MapsService {
   constructor(private http : HttpClient) {
     
   }
-  
+//getting www urlencoded format from the server.  
   getLocation():Observable <Map[]>{
    return this.http.get<Map[]>("http://localhost:3000/api/get/location/");
    console.log("maps service called");

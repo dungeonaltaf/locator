@@ -4,7 +4,10 @@ const GPSschema = mongoose.Schema({
 
     latitude :Number,
     longitude :Number,
-    phone : Number
+    first_name: String,
+    last_name: String,
+    email: String,
+    password: String
 
 });
 
