@@ -11,15 +11,17 @@
 
 <p>Click the button to get your coordinates.</p>
 
-<button >Try It</button>
+<button id ="getLocation" >Try It</button>
 
 <p id="demo"></p>
-
+<form action="http://localhost:3000/post/logout/" method="post" >
+<button id="logout"> Logout the session</button>
+</form>
 <script>
 $(document).ready(function(){ 
     var latitude ;
     var longitude;
-    $("button").click(function () { //user clicks button
+    $('#getLocation').click(function () { //user clicks button
         if ("geolocation" in navigator){ //check geolocation available 
             //try to get user current location using getCurrentPosition() method
             navigator.geolocation.getCurrentPosition(function(position){
@@ -45,6 +47,8 @@ $(document).ready(function(){
             console.log("Browser doesn't support geolocation!");
         }
         });
+
+
   });
 </script>
 

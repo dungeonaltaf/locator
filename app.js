@@ -44,6 +44,16 @@ app.post('/post/login/',urlencoder,function(req,res){
     });
 
 });
+
+app.post('/post/logout/', urlencoder,function(req,res){
+    req.session.destroy((err) => {
+        if(err) {
+            return console.log(err);
+        }
+        console.log("session destroyed user logout");
+        res.redirect('/');
+    });
+});
 //putting cors
 app.use(cors());
 
