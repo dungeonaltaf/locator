@@ -17,6 +17,7 @@ export class MapsComponent implements OnInit {
   location : Map;
   latitude : Number;
   longitude: Number;
+  first_name : String;
   constructor(private mapService : MapsService) { }
 
   ngOnInit() {

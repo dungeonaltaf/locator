@@ -26,7 +26,7 @@ router.post('/post/location/',urlencoder,function(req,res){
         console.log("couldn't update location");
     }
     else{
-    console.log("Updated lcoation");
+    console.log("Updated location");
     }
   });
         
