@@ -5,7 +5,7 @@
 <agm-map [latitude]="lat" [longitude]="lng">
 
     <agm-marker *ngFor="let location of locations"
-    [latitude]="location.latitude" [longitude]="location.longitude" [label]="{color: 'white', text: location.first_name}"
+    [latitude]="location.latitude" [longitude]="location.longitude" [styles]="styles" [label]="{color: 'white', text: location.first_name}"
     ></agm-marker>
   
 </agm-map>
